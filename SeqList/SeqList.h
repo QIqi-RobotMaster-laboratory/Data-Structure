@@ -67,6 +67,5 @@ int SeqListFind(Dynamic_SL* ps, SLDateType x);
 //指定下标位置插入
 void SeqListInsert(Dynamic_SL* ps, int pos, SLDateType x);
 //指定下标删除
-void SeaListErase
-
+void SeqListErase(Dynamic_SL* ps, int pos);
 #endif
