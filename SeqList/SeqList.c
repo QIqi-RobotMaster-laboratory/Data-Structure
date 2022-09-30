@@ -133,6 +133,9 @@ int SeqListFind(Dynamic_SL* ps, SLDateType x)
 
 void SeqListInsert(Dynamic_SL* ps, int pos, SLDateType x)
 {
+    //判断插入位置是否合法
+    assert(0 <= pos && pos < ps->size);
+
     //检测空间是否已满
     SeqListCheckCapacity(ps);
     //挪动数据
@@ -150,6 +153,10 @@ void SeqListInsert(Dynamic_SL* ps, int pos, SLDateType x)
 
 void SeqListErase(Dynamic_SL* ps, int pos)
 {
+    //判断删除位置是否合法
+    assert(0 <= pos && pos < ps->size);
+    
+    //判断是否可以删除
     assert(ps->size > 0);
     int begin = pos;
     while(begin < ps->size)

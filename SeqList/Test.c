@@ -22,7 +22,7 @@ void TestSeqList2(void)
     SeqListPrint(&sl);
 
     SeqListInsert(&sl, 4, 100);
-    SeqListInsert(&sl, 5, 1999);
+    SeqListInsert(&sl, 9, 1999);
     SeqListPrint(&sl);
 
     SeqListErase(&sl, 1);
